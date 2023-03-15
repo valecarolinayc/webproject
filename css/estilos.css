@@ -13,8 +13,7 @@ body{
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    color: var(--blanco);
-}
+    font-family: 'Krub', sans-serif;}
 .titulo span{
     font-size: 2rem;
     color: blue;
