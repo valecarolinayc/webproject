@@ -60,5 +60,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+    position: relative;
+}
+.contenedor-hero {
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0/70%);
+    height: 100%;
+    width: 100%;
+
+
 }
