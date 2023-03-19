@@ -13,6 +13,15 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -22,11 +31,29 @@ body{
 }
 .titulo span{
     font-size: 2rem;
-    color: blue;
+    color: pink;
 }
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold; /** o tambien se puede usar 700 **/ 
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+<@media (min-width: 480px){  /** Se reseteara el tamaño **/
+    .boton{
+        width: auto;
+    }
 }
 .bg-nav{
     background-color: var(--secundario);
@@ -69,5 +96,18 @@ body{
     height: 100%;
     width: 100%;
 
+    display: flex;
+    flex-direction: column; /** cuando se utiliza columnas  se utiliza justify content**/
+    align-items: center;
+    justify-content: center;
 
+}
+
+.contenedor-hero h2,
+.contenedor-hero p{
+    color: var(--blanco);
+}
+.ubicacion{
+    display: flex;
+    align-items: center; /** alineacion vertical**/
 }
